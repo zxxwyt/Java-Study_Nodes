@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: tlias-web-management
+
+  datasource:
+    url: jdbc:mysql://192.168.242.128:3306/tlias
+    username: dev
+    password: zxxdjy1839
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    root: info
+    com.itheima: debug
+    org.mybatis: debug
